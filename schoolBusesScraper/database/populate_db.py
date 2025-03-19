@@ -31,12 +31,13 @@ def populate_db(json_file):
                 cursor.execute("""
                     INSERT INTO buses 
                     (title, make, model, year, mileage, passengers, wheelchair, price, vin, engine, transmission, 
-                    location, description)
-                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                    location, description, color, source_url, brake)
+                    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
                     bus.get("title"), bus.get("make"), bus.get("model"), bus.get("year"), bus.get("mileage"), 
                     bus.get("passengers"), bus.get("wheelchair"), bus.get("price"), bus.get("vin"), 
-                    bus.get("engine"), bus.get("transmission"), bus.get("location"), bus.get("description")
+                    bus.get("engine"), bus.get("transmission"), bus.get("location"), bus.get("description"),
+                    bus.get("color"), bus.get("source_url"), bus.get("brake")
                 ))
                 bus_id = cursor.lastrowid  # Get the last inserted ID
 

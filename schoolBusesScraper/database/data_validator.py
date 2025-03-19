@@ -29,7 +29,10 @@ def validate_scraped_data(json_data):
         "images": list,
         "location": (str, type(None)),
         "description": (str, type(None)),
-        "features": (str, type(None))
+        "features": (str, type(None)),
+        "brake": (str, type(None)),
+        "color": (str, type(None)),
+        "source_url": (str, type(None)),
     }
 
     # Data type lengths
@@ -45,7 +48,10 @@ def validate_scraped_data(json_data):
         "wheelchair": 60,
         "price": 30,
         "vin": 60,
-        "location": 30
+        "location": 30,
+        "brake": 30,
+        "color": 60,
+        "source_url": 1000,
     }
 
     for index, bus in enumerate(scraped_data):
