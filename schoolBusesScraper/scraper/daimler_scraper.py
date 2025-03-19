@@ -154,7 +154,7 @@ driver.quit()
 
 # Save JSON to file
 json_output = json.dumps(scraped_items, indent=4, ensure_ascii=False)
-with open("scraped_buses.json", "w", encoding="utf-8") as f:
+with open("data/scraped_buses.json", "w", encoding="utf-8") as f:
     f.write(json_output)
 
 print("Scraping completed! Data saved to scraped_buses.json")
