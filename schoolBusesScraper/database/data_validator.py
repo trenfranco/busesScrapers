@@ -1,11 +1,15 @@
 import json
 
 
-def validate_scraped_data(scraped_data):
+def validate_scraped_data(json_data):
     """
     Validates scraped JSON data against the expected database schema
     return: List of validated buses, List of errors
     """
+    # Load JSON and validate
+    with open(json_data, "r", encoding="utf-8") as f:
+        scraped_data = json.load(f)
+
     validated_data = []
     errors = []
 
@@ -25,8 +29,7 @@ def validate_scraped_data(scraped_data):
         "images": list,
         "location": (str, type(None)),
         "description": (str, type(None)),
-        "features": (str, type(None)),
-        "image_url": (str, type(None))
+        "features": (str, type(None))
     }
 
     # Data type lengths
@@ -78,23 +81,12 @@ def validate_scraped_data(scraped_data):
 
         validated_data.append(validated_bus)
 
-    return validated_data, errors
+    # Print errors if any
+    if validation_errors:
+        print("There are some validation errors:")
+        for error in validation_errors:
+            print(f"Bus Index {error['bus_index']}: {error['errors']}")
+    else:
+        print("The JSON file is valid and saved to validated_buses.json!")
 
-
-# Load JSON and validate
-with open("data/scraped_buses.json", "r", encoding="utf-8") as f:
-    scraped_buses = json.load(f)
-
-validated_buses, validation_errors = validate_scraped_data(scraped_buses)
-
-# Save the validated data
-with open("data/validated_buses.json", "w", encoding="utf-8") as f:
-    json.dump(validated_buses, f, indent=4, ensure_ascii=False)
-
-# Print errors if any
-if validation_errors:
-    print("There are some validation errors:")
-    for error in validation_errors:
-        print(f"Bus Index {error['bus_index']}: {error['errors']}")
-else:
-    print("The JSON file is valid and saved to validated_buses.json!")
+    return validated_data
