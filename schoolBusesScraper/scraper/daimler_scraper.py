@@ -130,27 +130,28 @@ def daimler_scraper():
             except NoSuchElementException:
                 image_urls = []  # If galerry fails return empty list
 
-            # Store data
-            scraped_items.append({
-                "title": title,
-                "make": make,
-                "model": model,
-                "year": year,
-                "mileage": mileage,
-                "passengers": passengers,
-                "wheelchair": wheelchair,
-                "engine": engine,
-                "vin": vin,
-                "price": price,
-                "images": image_urls,
-                "transmission": None,
-                "gvwr": None,
-                "location": None,
-                "description": None,
-                "features": None
-            })
         except Exception as e:
             print(f"Error processing bus {index+1}: {e}")
+
+        # Store data
+        scraped_items.append({
+            "title": title,
+            "make": make,
+            "model": model,
+            "year": year,
+            "mileage": mileage,
+            "passengers": passengers,
+            "wheelchair": wheelchair,
+            "engine": engine,
+            "vin": vin,
+            "price": price,
+            "images": image_urls,
+            "transmission": None,
+            "gvwr": None,
+            "location": None,
+            "description": None,
+            "features": None
+        })
 
     # Close browser
     driver.quit()

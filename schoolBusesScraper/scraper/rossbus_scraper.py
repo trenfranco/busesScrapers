@@ -85,7 +85,7 @@ def rossbus_scraper():
             try:
                 mileage_text = item.find_element(
                     By.XPATH, ".//li[contains(., 'Miles')]").text
-                mileage = re.search(r"([\d.,]+)", mileage_text).group(1).strip()
+                mileage = re.search(r"Miles:\s(.*)", mileage_text).group(1).strip()
             except NoSuchElementException:
                 pass
 
@@ -99,7 +99,7 @@ def rossbus_scraper():
                 pass
 
             # Wheelchair accessibility
-            wheelchair = "No"
+            wheelchair = None
             try:
                 wheelchair_text = item.find_element(
                         By.XPATH, ".//li[contains(., 'Lift Equipped')]").text
@@ -113,9 +113,8 @@ def rossbus_scraper():
             # Extract VIN
             vin = None
             try:
-                vin_text = item.find_element(
+                vin = item.find_element(
                     By.XPATH, ".//h6").text
-                vin = vin_text.strip()
             except NoSuchElementException:
                 pass
 
@@ -161,32 +160,32 @@ def rossbus_scraper():
                     By.XPATH, ".//a[contains(., 'read more')]").get_attribute("href")
             except NoSuchElementException:
                 pass
-
-            # Store data
-            scraped_items.append({
-                "title": title,
-                "make": make,
-                "model": model,
-                "year": year,
-                "mileage": mileage,
-                "passengers": passengers,
-                "wheelchair": wheelchair,
-                "engine": engine,
-                "vin": vin,
-                "price": price,
-                "images": image_urls,
-                "transmission": None,
-                "gvwr": None,
-                "location": None,
-                "description": None,
-                "features": None,
-
-                "brake": has_brake,# new
-                "color": color,# new
-                "source_url": source_url# new
-            })
         except Exception as e:
             print(f"Error processing bus {index+1}: {e}")
+
+        # Store data
+        scraped_items.append({
+            "title": title,
+            "make": make,
+            "model": model,
+            "year": year,
+            "mileage": mileage,
+            "passengers": passengers,
+            "wheelchair": wheelchair,
+            "engine": engine,
+            "vin": vin,
+            "price": price,
+            "images": image_urls,
+            "transmission": None,
+            "gvwr": None,
+            "location": None,
+            "description": None,
+            "features": None,
+
+            "brake": has_brake,# new
+            "color": color,# new
+            "source_url": source_url# new
+        })
 
     # Close browser
     driver.quit()
@@ -199,5 +198,3 @@ def rossbus_scraper():
     print("Scraping completed! Data saved to /data/scraped_buses_rossbus.json")
 
     return "data/scraped_buses_rossbus.json"
-
-rossbus_scraper()
