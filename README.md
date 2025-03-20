@@ -57,6 +57,11 @@ Modify **db_config.py** values for your specific DB.
 **Populated DB exmaple**
 <br>
 ![image](https://github.com/user-attachments/assets/22e702e7-cd88-46e6-8d1c-d1d4eb5b234c)
+<br>
+![image](https://github.com/user-attachments/assets/00bc568c-c62f-451b-90cf-e2bf2febf26d)
+<br>
+
+
 
 
 
