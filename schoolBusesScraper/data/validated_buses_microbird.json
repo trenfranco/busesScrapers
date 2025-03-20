@@ -1,0 +1,22 @@
+[
+    {
+        "title": "CHEVY/GMC",
+        "year": null,
+        "make": "CHEVY/GMC",
+        "model": "400",
+        "engine": "4.3L gas / 6.6L gas",
+        "transmission": null,
+        "mileage": null,
+        "passengers": "20",
+        "wheelchair": null,
+        "price": null,
+        "vin": null,
+        "images": [],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "4-wheel anti-lock, 4-wheel dis",
+        "color": null,
+        "source_url": null
+    }
+]

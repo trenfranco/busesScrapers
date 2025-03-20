@@ -89,9 +89,9 @@ def validate_scraped_data(json_data):
 
     # Print errors if any
     if validation_errors:
-        print("There are some validation errors:")
-        for error in validation_errors:
-            print(f"Bus Index {error['bus_index']}: {error['errors']}")
+        print(f"There are some validation errors:{validation_errors}")
+        #for error in validation_errors:
+            #print(f"Bus Index {error['bus_index']}: {error['errors']}")
     else:
         print("The JSON file is valid and saved to validated_buses.json!")
 
