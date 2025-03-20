@@ -1,0 +1,222 @@
+[
+    {
+        "title": "Bus: JF342404",
+        "year": "2018",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "100759",
+        "passengers": "77",
+        "wheelchair": "No",
+        "price": null,
+        "vin": "JF342404",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Hydraulic",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/jf342404-2"
+    },
+    {
+        "title": "Bus: EF298877",
+        "year": "2014",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "77391",
+        "passengers": "71",
+        "wheelchair": "No",
+        "price": "40,000",
+        "vin": "EF298877",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Hydraulic",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/ef298877"
+    },
+    {
+        "title": "Bus: EF303756",
+        "year": "2014",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "89484",
+        "passengers": "71",
+        "wheelchair": "No",
+        "price": "40,000",
+        "vin": "EF303756",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Hydraulic",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/ef303756"
+    },
+    {
+        "title": "Bus: 6F233545",
+        "year": "2006",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": null,
+        "passengers": "72",
+        "wheelchair": "No",
+        "price": "3,000",
+        "vin": "6F233545",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/6f233545"
+    },
+    {
+        "title": "Bus: 7F238906",
+        "year": "2007",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "118715",
+        "passengers": "72",
+        "wheelchair": "No",
+        "price": "3,400",
+        "vin": "7F238906",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/7f238906"
+    },
+    {
+        "title": "Bus: 7F243490",
+        "year": "2007",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "151912",
+        "passengers": "72",
+        "wheelchair": "No",
+        "price": "3,400",
+        "vin": "7F243490",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/7f243490"
+    },
+    {
+        "title": "Bus: 7F243494",
+        "year": "2007",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "162350",
+        "passengers": "72",
+        "wheelchair": "No",
+        "price": "3,400",
+        "vin": "7F243494",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/7f243494"
+    },
+    {
+        "title": "Bus: 8F252507",
+        "year": "2008",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "160077",
+        "passengers": "72",
+        "wheelchair": "No",
+        "price": "4,000",
+        "vin": "8F252507",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/8f252507"
+    },
+    {
+        "title": "Bus: 9F255587",
+        "year": "2009",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": null,
+        "passengers": "45",
+        "wheelchair": "Yes",
+        "price": "8,000",
+        "vin": "9F255587",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Hydraulic",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/9f255587"
+    },
+    {
+        "title": "Bus: 9F256857",
+        "year": "2009",
+        "make": "Blue Bird",
+        "model": "Conventional",
+        "engine": null,
+        "transmission": null,
+        "mileage": "194186",
+        "passengers": "71",
+        "wheelchair": "No",
+        "price": "8,000",
+        "vin": "9F256857",
+        "images": [
+            "https://www.rossbus.com/html/images/imgs/image-not-found-370X250.jpg"
+        ],
+        "location": null,
+        "description": null,
+        "features": null,
+        "brake": "Air",
+        "color": "Yellow",
+        "source_url": "https://www.rossbus.com/9f256857"
+    }
+]
