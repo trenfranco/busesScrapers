@@ -85,7 +85,8 @@ def rossbus_scraper():
             try:
                 mileage_text = item.find_element(
                     By.XPATH, ".//li[contains(., 'Miles')]").text
-                mileage = re.search(r"Miles:\s(.*)", mileage_text).group(1).strip()
+                if mileage_text:
+                    mileage = re.search(r"Miles:\s(.*)", mileage_text).group(1).strip()
             except NoSuchElementException:
                 pass
 
