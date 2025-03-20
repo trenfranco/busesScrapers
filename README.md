@@ -28,6 +28,11 @@ pip install webdriver-manager
 <br>
 pip install pymysql
 <br>
+python -m venv venv<br>
+source venv/bin/activate  # Mac/Linux<br>
+venv\Scripts\activate     # Windows<br>
+pip install -r requirements.txt<br>
+<br>
 To create DB schema execute **db_setup.sql** script.
 <br>
 Modify **db_config.py** values for your specidic DB.
