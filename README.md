@@ -4,7 +4,7 @@
 This project automates the **scraping, validation, and database storage** of bus listings from multiple sources. It uses **Selenium for web scraping**, **MySQL for data storage**, and follows a structured **ETL (Extract, Transform, Load) pipeline**. Depending on the scraper script, it scrapes dinamycally or just in HTML parser mode.
 
 ## **Project Structure**
-├── data/ │ ├── empty.json │ <br>├── database/ │├── data_validator.py │├── db_config.py │ ├── db_setup.sql │ ├── populate_db.py │ <br>├── scraper/ │├── daimler_scraper.py │ ├── download_pdf.py │ ├── rossbus_scraper.py │ <br>├── main_daimler.py  <br>├── main_microbird.py <br> ├── main_rossbus.py  <br>├── requirements.txt
+├── data/ │ ├── empty.json │ <br>├── database/ │├── data_validator.py │├── db_config.py │ ├── db_setup.sql │ ├── populate_db.py │ <br>├── scraper/ │├── daimler_scraper.py │ ├── download_pdf.py │ ├── rossbus_scraper.py │ ├── microbird_scraper.py │├── pdf_to_html.py │ <br>├── main_daimler.py  <br>├── main_microbird.py <br> ├── main_rossbus.py  <br>├── requirements.txt
  <br>
  <br>
  **database** folder contains scritps to validate, transform and load the data. Also some scripts to connect and setup the DB schema.
