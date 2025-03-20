@@ -32,6 +32,8 @@ pip install pandas
 <br>
 pip install pdfplumber
 <br>
+Create a virtual env:
+<br>
 python -m venv venv<br>
 source venv/bin/activate  # Mac/Linux<br>
 venv\Scripts\activate     # Windows<br>
@@ -39,6 +41,22 @@ pip install -r requirements.txt<br>
 <br>
 To create DB schema execute **db_setup.sql** script.
 <br>
-Modify **db_config.py** values for your specidic DB.
+Modify **db_config.py** values for your specific DB.
 <br><br>
 **Finally run any of the main files**
+
+**The complete scrapers are daimler_scraper.py and rossbus_scraper.py. microbird_scraper.py Works but is incomplete**, it uses 2 extra scripts, **download_pdf.py** and **pdf_to_html.py**
+
+**Validated json exmaples:**
+![image](https://github.com/user-attachments/assets/980026d6-d608-4a3e-b028-f581c3f17d8c)
+<br>
+![image](https://github.com/user-attachments/assets/b5887d74-6067-45bb-b814-a043def23e62)
+<br>
+![image](https://github.com/user-attachments/assets/bf946968-8e9d-420c-ad64-c1890727a325)
+<br>
+**Populated DB exmaple**
+<br>
+![image](https://github.com/user-attachments/assets/22e702e7-cd88-46e6-8d1c-d1d4eb5b234c)
+
+
+
