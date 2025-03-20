@@ -28,6 +28,10 @@ pip install webdriver-manager
 <br>
 pip install pymysql
 <br>
+pip install pandas
+<br>
+pip install pdfplumber
+<br>
 python -m venv venv<br>
 source venv/bin/activate  # Mac/Linux<br>
 venv\Scripts\activate     # Windows<br>
